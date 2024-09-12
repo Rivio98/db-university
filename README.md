@@ -57,3 +57,7 @@ AND `date` LIKE '2020-06-20';
 SELECT * 
 FROM `degrees` 
 WHERE `level` LIKE 'magistrale';
+
+7.
+SELECT COUNT(*) AS `deparments_university`
+FROM `departments`
