@@ -41,7 +41,14 @@ SELECT *
 FROM `students` 
 WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
 
-4.SELECT * 
+4.
+SELECT * 
 FROM `courses` 
 WHERE `period` LIKE 'I semestre'
 AND `year` = 1;
+
+5.
+SELECT * 
+FROM `exams`
+WHERE  `hour` > '14:00:00'
+AND `date` LIKE '2020-06-20';
