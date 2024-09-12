@@ -60,4 +60,9 @@ WHERE `level` LIKE 'magistrale';
 
 7.
 SELECT COUNT(*) AS `deparments_university`
-FROM `departments`
+FROM `departments`;
+
+8.
+SELECT COUNT(*) AS `no_phone_number`
+FROM `teachers` 
+WHERE `phone` IS NULL ; 
