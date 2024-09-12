@@ -66,3 +66,6 @@ FROM `departments`;
 SELECT COUNT(*) AS `no_phone_number`
 FROM `teachers` 
 WHERE `phone` IS NULL ; 
+
+9.
+INSERT INTO `students`(`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES (9,'Rivaldo','Gjoni','1998-02-28','GJNRLD98B28Z100O','2024-09-12','7777777','rivaldogjoni1998@gmail.com');
