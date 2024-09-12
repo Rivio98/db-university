@@ -75,3 +75,7 @@ UPDATE `teachers`
 SET `office_number`= 126
 WHERE `name` LIKE 'Pietro'
 AND `surname` LIKE 'Rizzo'
+
+11.
+DELETE FROM `students` 
+WHERE `fiscal_code` LIKE 'GJNRLD98B28Z100O';
