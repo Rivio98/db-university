@@ -69,3 +69,9 @@ WHERE `phone` IS NULL ;
 
 9.
 INSERT INTO `students`(`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES (9,'Rivaldo','Gjoni','1998-02-28','GJNRLD98B28Z100O','2024-09-12','7777777','rivaldogjoni1998@gmail.com');
+
+10.
+UPDATE `teachers` 
+SET `office_number`= 126
+WHERE `name` LIKE 'Pietro'
+AND `surname` LIKE 'Rizzo'
