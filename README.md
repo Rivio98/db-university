@@ -100,3 +100,9 @@ SELECT AVG(vote), `exam_id`
 FROM `exam_student`
 GROUP BY `exam_id`
 
+4.
+SELECT COUNT(*) as `course_for_deparments`, `department_id`
+FROM `degrees`
+GROUP BY `department_id`
+
+
