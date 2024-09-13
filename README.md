@@ -123,4 +123,11 @@ JOIN `departments` ON `degrees`.`department_id`=`departments`.`id`
 WHERE `degrees`.`level` LIKE 'magistrale'
 AND `departments`.`name` LIKE 'Dipartimento di Neuroscienze'
 
+3.
+SELECT `courses`.`name` AS 'Flavio_Amato_courses'
+FROM `courses`
+JOIN `course_teacher`ON `courses`.`id` = `course_teacher`.`course_id`
+JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`
+WHERE `teachers`.`id` = 44
+
 
