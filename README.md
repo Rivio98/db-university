@@ -130,4 +130,12 @@ JOIN `course_teacher`ON `courses`.`id` = `course_teacher`.`course_id`
 JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`
 WHERE `teachers`.`id` = 44
 
+4.
+SELECT `students`.`surname`, `students`.`name`, `departments`.`name` AS name_department, degrees.name AS name_degree
+FROM `students`
+JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id`
+JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
+ORDER BY `students`.`surname`, `students`.`name`
+
+
 
