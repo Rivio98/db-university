@@ -91,4 +91,7 @@ FROM `students`
 GROUP BY YEAR(`enrolment_date`)
 
 2.
+SELECT COUNT(*) AS `office_adress_common`, `office_address`
+FROM `teachers`
+GROUP BY office_address
 
