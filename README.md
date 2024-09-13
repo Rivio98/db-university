@@ -116,4 +116,11 @@ FROM `students`
 JOIN `degrees` ON `students`.`degree_id`=`degrees`.`id`
 WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
 
+2.
+SELECT `degrees`.*
+FROM `degrees`
+JOIN `departments` ON `degrees`.`department_id`=`departments`.`id`
+WHERE `degrees`.`level` LIKE 'magistrale'
+AND `departments`.`name` LIKE 'Dipartimento di Neuroscienze'
+
 
