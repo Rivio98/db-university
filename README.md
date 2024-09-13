@@ -95,3 +95,8 @@ SELECT COUNT(*) AS `office_adress_common`, `office_address`
 FROM `teachers`
 GROUP BY office_address
 
+3.
+SELECT AVG(vote), `exam_id`
+FROM `exam_student`
+GROUP BY `exam_id`
+
