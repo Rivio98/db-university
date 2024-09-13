@@ -85,6 +85,8 @@ Ciao a tutti
 Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate un secondo file nella stessa repo di ieri (db-university) con le query di oggi.
 Numero push: uno per ogni query
 
+GROUP BY
+
 1.
 SELECT COUNT(*) AS `students_for_year`, YEAR(`enrolment_date`)
 FROM `students`
@@ -104,5 +106,14 @@ GROUP BY `exam_id`
 SELECT COUNT(*) as `course_for_deparments`, `department_id`
 FROM `degrees`
 GROUP BY `department_id`
+
+
+JOIN
+
+1.
+SELECT `students`.*
+FROM `students`
+JOIN `degrees` ON `students`.`degree_id`=`degrees`.`id`
+WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
 
 
