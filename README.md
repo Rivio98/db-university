@@ -79,3 +79,16 @@ AND `surname` LIKE 'Rizzo'
 11.
 DELETE FROM `students` 
 WHERE `fiscal_code` LIKE 'GJNRLD98B28Z100O';
+
+
+Ciao a tutti
+Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate un secondo file nella stessa repo di ieri (db-university) con le query di oggi.
+Numero push: uno per ogni query
+
+1.
+SELECT COUNT(*) AS `students_for_year`, YEAR(`enrolment_date`)
+FROM `students`
+GROUP BY YEAR(`enrolment_date`)
+
+2.
+
